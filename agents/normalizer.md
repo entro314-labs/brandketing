@@ -44,7 +44,7 @@ For Pains: always extract both surface_pain (what users say) and hidden_pain (wh
 
 For Quotes: extract verbatim language. Never paraphrase. Tag by persona, stage, pain theme, and sentiment.
 
-For UseCases: frame as jobs, not features. "Roll out the product without turning setup into a project" — not "use the onboarding flow."
+For UseCases: frame as jobs, not features. "Roll out the product without turning setup into a project" - not "use the onboarding flow."
 
 ### commercial-truth
 Source types: CRM exports, won/lost reasons, expansion account data, sales call notes, title frequency analysis
@@ -71,7 +71,7 @@ Only elevate proof that is: measurable OR mechanistic, fresh, attributable to th
 Load the full schema for each object type from `${CLAUDE_PLUGIN_ROOT}/context/schemas/`. Each schema defines required and optional fields.
 
 Key rules for all objects:
-- `source_refs` must be populated — no extraction without citation
+- `source_refs` must be populated - no extraction without citation
 - `confidence` is a float 0.0–1.0
 - `status` starts as `"pending"` for all new objects
 - `freshness` is today's date in ISO format

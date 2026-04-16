@@ -8,13 +8,13 @@ Run the **normalizer** agent on a raw source file and write the resulting struct
 
 ## Arguments
 
-- `<source-path>` — path to the raw source file (transcript, doc, ticket export, competitor page, etc.)
-- `<pipeline>` — which pipeline to run:
-  - `product-truth` — docs, PRDs, changelogs, demo transcripts, screenshots → Capability objects
-  - `customer-truth` — call transcripts, support tickets, onboarding notes, reviews → Pain, Quote, UseCase objects
-  - `commercial-truth` — CRM exports, won/lost reasons, account data → Persona objects
-  - `market-truth` — competitor pages, comparison content, review sites → Competitor, Cliche objects
-  - `proof-truth` — analytics exports, case studies, internal wins → Proof objects
+- `<source-path>` - path to the raw source file (transcript, doc, ticket export, competitor page, etc.)
+- `<pipeline>` - which pipeline to run:
+  - `product-truth` - docs, PRDs, changelogs, demo transcripts, screenshots → Capability objects
+  - `customer-truth` - call transcripts, support tickets, onboarding notes, reviews → Pain, Quote, UseCase objects
+  - `commercial-truth` - CRM exports, won/lost reasons, account data → Persona objects
+  - `market-truth` - competitor pages, comparison content, review sites → Competitor, Cliche objects
+  - `proof-truth` - analytics exports, case studies, internal wins → Proof objects
 
 ## Process
 
@@ -44,4 +44,4 @@ Store files:
 - Never overwrite existing approved objects (status: "approved"). Append only.
 - Flag duplicate objects by similarity rather than silently merging.
 - Low-confidence extractions (< 0.5) should be added with status: "needs-review" and a note explaining why confidence is low.
-- Source reference must always be included — never extract without citing origin.
+- Source reference must always be included - never extract without citing origin.

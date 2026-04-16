@@ -3,7 +3,7 @@ name: compile
 description: This skill should be used when assembling a marketing brief from approved context store objects, mapping object types to brief sections, filtering by ICP, ranking objects for inclusion, or when the compiler agent needs assembly guidance.
 ---
 
-# Compile Skill — Brief Assembly Logic
+# Compile Skill - Brief Assembly Logic
 
 ## Section Assembly Rules
 
@@ -52,7 +52,7 @@ Always include both `surface_pain` and `hidden_pain`. If hidden_pain is missing,
 
 Filter Quote objects tagged to the top pain themes from KNOWN PAINS. Rank by `vividness`. Select top 6–10.
 
-Quotes must remain verbatim — never paraphrase.
+Quotes must remain verbatim - never paraphrase.
 
 ### COMPETITORS / ALTERNATIVES
 
@@ -79,12 +79,12 @@ Load Brand object from store. Include all fields: tone axes, words to favor, wor
 ### DELIVERABLE
 
 Populate from command arguments:
-- `type` — homepage-hero, sales-narrative, ad-headlines, etc.
-- `channel` — web, email, paid, sales deck, etc.
-- `audience` — ICP label
-- `stage` — awareness, consideration, activation, etc.
-- `objective` — what the asset must achieve
-- `length constraints` — word count, format requirements
+- `type` - homepage-hero, sales-narrative, ad-headlines, etc.
+- `channel` - web, email, paid, sales deck, etc.
+- `audience` - ICP label
+- `stage` - awareness, consideration, activation, etc.
+- `objective` - what the asset must achieve
+- `length constraints` - word count, format requirements
 
 ## Freshness Warnings
 
@@ -96,6 +96,6 @@ Apply stale thresholds by layer:
 ## Missing Section Protocol
 
 If a section has no approved objects:
-- Write: `[NO APPROVED DATA — requires ingestion via /brandketing:ingest]`
+- Write: `[NO APPROVED DATA - requires ingestion via /brandketing:ingest]`
 - Specify which pipeline to run
 - Do not invent placeholder content

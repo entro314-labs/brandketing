@@ -8,8 +8,8 @@ Run the **strategist** agent (6-step strategy workflow) followed by the **critic
 
 ## Arguments
 
-- `[deliverable]` (optional) — if provided, compiles a brief first via the compiler agent. If omitted, uses the most recent compiled brief from `.brandketing/briefs/`.
-- `[icp]` (optional) — passed to the compiler when compiling a brief.
+- `[deliverable]` (optional) - if provided, compiles a brief first via the compiler agent. If omitted, uses the most recent compiled brief from `.brandketing/briefs/`.
+- `[icp]` (optional) - passed to the compiler when compiling a brief.
 
 ## Alternatively
 
@@ -57,7 +57,7 @@ E. Critic audit + revisions
 
 ## Rules
 
-- Never skip the territory selection checkpoint — human must approve the direction.
-- Never skip the critic pass — every generation goes through audit.
+- Never skip the territory selection checkpoint - human must approve the direction.
+- Never skip the critic pass - every generation goes through audit.
 - Do not add features or capabilities not present in the brief.
 - If the brief has empty or low-confidence sections, flag them before generating rather than filling them with invented content.

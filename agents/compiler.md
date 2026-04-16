@@ -25,7 +25,7 @@ Assemble each brief section from the approved object store:
 | CATEGORY CLICHÉS | Cliches | All approved |
 | PROOF | Proofs | Top 3–5 by proof_type relevance to deliverable; prefer numeric first, mechanistic second |
 | BRAND GUARDRAILS | Brand | Load from brand.json (static layer) |
-| DELIVERABLE | — | Filled from command arguments: type + channel + audience + stage + objective |
+| DELIVERABLE | - | Filled from command arguments: type + channel + audience + stage + objective |
 
 ---
 
@@ -97,6 +97,6 @@ DELIVERABLE
 ## Rules
 
 - Only use objects with `status: "approved"`. Never pull from pending, rejected, or needs-review.
-- Do not invent content. If a section has no approved objects, write: `[NO APPROVED DATA — section requires ingestion]`
-- Surface confidence warnings before finishing — do not bury them.
-- Do not rephrase Quote objects — they must remain verbatim.
+- Do not invent content. If a section has no approved objects, write: `[NO APPROVED DATA - section requires ingestion]`
+- Surface confidence warnings before finishing - do not bury them.
+- Do not rephrase Quote objects - they must remain verbatim.

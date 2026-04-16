@@ -3,7 +3,7 @@ name: generate
 description: This skill should be used when running the 6-step marketing strategy workflow, generating copy hierarchies from a brief, selecting positioning territories, or when the strategist agent needs the full workflow reference.
 ---
 
-# Generate Skill — Strategy Workflow Reference
+# Generate Skill - Strategy Workflow Reference
 
 ## The 6-Step Workflow
 
@@ -40,7 +40,7 @@ Generate 3–5 positioning territories. For each:
 
 - Target audience
 - Surface problem (what they think they have)
-- Deeper problem (what they actually have — the latent diagnosis)
+- Deeper problem (what they actually have - the latent diagnosis)
 - Cost of misdiagnosis
 - The promise
 - Unique mechanism making the promise believable
@@ -68,13 +68,13 @@ Subtract if: generic, verbatim competitor claim, feature-name dressed up, hype w
 
 Write for the confirmed primary territory only:
 
-- **Core brand message** — the changed reality for the buyer. Not the feature, not the architecture. The shift.
-- **5 headline options** — outcome-led, tension-driven, specific
-- **3 subhead options** — mechanism + relevance + who it's for
-- **3 message pillars** — each maps a product strength to a meaningful benefit
+- **Core brand message** - the changed reality for the buyer. Not the feature, not the architecture. The shift.
+- **5 headline options** - outcome-led, tension-driven, specific
+- **3 subhead options** - mechanism + relevance + who it's for
+- **3 message pillars** - each maps a product strength to a meaningful benefit
   - Support bullets under each pillar (translated features, not feature names)
-- **3 CTA options** — action-specific, not generic
-- **3 tagline options** — short, ownable, preferably creates tension or reframe
+- **3 CTA options** - action-specific, not generic
+- **3 tagline options** - short, ownable, preferably creates tension or reframe
 
 Hierarchy rule:
 - Hero = outcome

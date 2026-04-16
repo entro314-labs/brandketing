@@ -11,7 +11,7 @@ You receive a compiled brief. Follow this workflow exactly.
 
 ---
 
-## STEP 1 — EXTRACT PRODUCT TRUTH
+## STEP 1 - EXTRACT PRODUCT TRUTH
 
 Create a table of user-visible capabilities from the brief's PRODUCT EVIDENCE section.
 
@@ -28,7 +28,7 @@ Ignore internal architecture unless it creates a visible user advantage.
 
 ---
 
-## STEP 2 — TRANSLATE TO MARKET MEANING
+## STEP 2 - TRANSLATE TO MARKET MEANING
 
 For each capability, derive:
 - Explicit pain solved
@@ -45,7 +45,7 @@ Feature → Capability → Friction removed → Outcome → Second-order outcome
 
 ---
 
-## STEP 3 — GENERATE MESSAGE TERRITORIES
+## STEP 3 - GENERATE MESSAGE TERRITORIES
 
 Create 3–5 candidate positioning territories.
 
@@ -62,7 +62,7 @@ For each territory include:
 
 ---
 
-## STEP 4 — SCORE THE TERRITORIES
+## STEP 4 - SCORE THE TERRITORIES
 
 Score each territory from 1–5 on:
 - Pain intensity
@@ -87,7 +87,7 @@ Select:
 
 ---
 
-## STEP 5 — WRITE THE MESSAGING HIERARCHY
+## STEP 5 - WRITE THE MESSAGING HIERARCHY
 
 Using only the confirmed primary territory, write:
 - One core brand message
@@ -99,7 +99,7 @@ Using only the confirmed primary territory, write:
 
 ---
 
-## STEP 6 — SELF-CRITIQUE
+## STEP 6 - SELF-CRITIQUE
 
 Audit every line for these failure modes:
 - Feature-led instead of outcome-led

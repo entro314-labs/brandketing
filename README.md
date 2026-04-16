@@ -1,14 +1,14 @@
 # brandketing
 
-A Claude Code plugin that turns raw product and customer data into a living marketing intelligence context store — and compiles it into briefs and copy on demand.
+A Claude Code plugin that turns raw product and customer data into a living marketing intelligence context store - and compiles it into briefs and copy on demand.
 
 ## What it does
 
-Instead of filling out a brief from scratch every time, this plugin maintains a **context store** that accumulates structured marketing objects over time. Each asset you generate pulls from approved, sourced, scored objects — not from memory or imagination.
+Instead of filling out a brief from scratch every time, this plugin maintains a **context store** that accumulates structured marketing objects over time. Each asset you generate pulls from approved, sourced, scored objects - not from memory or imagination.
 
 The two source documents behind this system:
-- `brief-harness.md` — automated brief compilation from 5 data pipelines
-- `marketing-harness.md` — 6-step strategy workflow + critic pass for copy generation
+- `brief-harness.md` - automated brief compilation from 5 data pipelines
+- `marketing-harness.md` - 6-step strategy workflow + critic pass for copy generation
 
 ## Install
 
@@ -43,10 +43,10 @@ Or from GitHub:
 
 ## Agents
 
-- **normalizer** — converts raw sources into typed, scored objects
-- **compiler** — assembles brief sections from approved objects, filtered by ICP
-- **strategist** — runs the 6-step strategy workflow to produce a messaging hierarchy
-- **critic** — red-teams every output line and rewrites what's weak
+- **normalizer** - converts raw sources into typed, scored objects
+- **compiler** - assembles brief sections from approved objects, filtered by ICP
+- **strategist** - runs the 6-step strategy workflow to produce a messaging hierarchy
+- **critic** - red-teams every output line and rewrites what's weak
 
 ## Context store
 

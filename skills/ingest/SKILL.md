@@ -3,7 +3,7 @@ name: ingest
 description: This skill should be used when ingesting raw marketing sources into the brandketing context store, normalizing content into structured objects, applying source weighting, or when the normalizer agent needs schema and pipeline guidance.
 ---
 
-# Ingest Skill — Context Object Schemas and Normalization Rules
+# Ingest Skill - Context Object Schemas and Normalization Rules
 
 ## Object Schemas
 
@@ -173,7 +173,7 @@ description: This skill should be used when ingesting raw marketing sources into
 | 0.9–1.0 | Multiple source types, strong evidence, recent |
 | 0.7–0.9 | Good evidence, 1–2 source types |
 | 0.5–0.7 | Plausible but thin evidence, single source |
-| < 0.5 | Weak or inferred — flag for needs-review |
+| < 0.5 | Weak or inferred - flag for needs-review |
 
 ## Hidden Pain Inference
 

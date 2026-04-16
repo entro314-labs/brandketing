@@ -8,7 +8,7 @@ Present pending context store objects one at a time for human approval, rejectio
 
 ## Arguments
 
-- `[type]` (optional) — which object type to review. Defaults to `all` in order of pipeline priority.
+- `[type]` (optional) - which object type to review. Defaults to `all` in order of pipeline priority.
 
 ## Process
 
@@ -19,11 +19,11 @@ Present pending context store objects one at a time for human approval, rejectio
    - Confidence score and source references
    - Freshness date
 3. Ask the human for one of:
-   - **approve** — set status: "approved"
-   - **reject** — set status: "rejected", ask for brief reason
-   - **edit** — open the object for inline editing, then approve
-   - **skip** — leave as pending, move to next
-   - **stop** — end review session
+   - **approve** - set status: "approved"
+   - **reject** - set status: "rejected", ask for brief reason
+   - **edit** - open the object for inline editing, then approve
+   - **skip** - leave as pending, move to next
+   - **stop** - end review session
 4. After each decision, update the store file immediately.
 5. Report a session summary: approved / rejected / skipped / remaining.
 
@@ -49,7 +49,7 @@ Source:      product-docs/onboarding.md (ingested 2026-04-16)
 
 ## Rules
 
-- Never show raw JSON to the human — always format for readability.
-- Group by type when reviewing "all" — finish one type before starting the next.
+- Never show raw JSON to the human - always format for readability.
+- Group by type when reviewing "all" - finish one type before starting the next.
 - Highlight objects with confidence < 0.6 with a warning.
 - Do not modify any field not explicitly changed by the human.

@@ -3,7 +3,7 @@ name: critique
 description: This skill should be used when red-teaming marketing copy, auditing for failure modes, rewriting weak lines, or when the critic agent needs the failure mode taxonomy and rewrite rules.
 ---
 
-# Critique Skill — Copy Audit Framework
+# Critique Skill - Copy Audit Framework
 
 ## Failure Mode Taxonomy
 
@@ -32,7 +32,7 @@ Add one specific anchor: a number, a named friction, a concrete moment, a before
 > "save time" → "cut the setup calls your team currently handles manually"
 
 **too-abstract:**
-Ground it in a visible scenario — what does the buyer see, feel, or stop dealing with?
+Ground it in a visible scenario - what does the buyer see, feel, or stop dealing with?
 > "unlock your potential" → "your first campaign goes live before you finish onboarding"
 
 **unsupported-claim:**
@@ -40,7 +40,7 @@ Either find proof in the brief (metric or mechanism) or soften to what can be su
 > "10x faster" → "most teams ship their first campaign in the same week they start"
 
 **too-safe:**
-Sharpen the tension — what is the cost of not having this? What happens if the problem persists?
+Sharpen the tension - what is the cost of not having this? What happens if the problem persists?
 > "helps teams work better" → "prevents the three-week setup drag that kills most rollouts"
 
 **clowny or arrogant:**

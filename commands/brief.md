@@ -8,14 +8,14 @@ Run the **compiler** agent to assemble a structured brief from approved context 
 
 ## Arguments
 
-- `<deliverable>` — the asset type being briefed. Examples:
-  - `homepage-hero` — hero + subhead + 3 pillars + CTA
-  - `sales-narrative` — full sales story arc
-  - `ad-headlines` — paid ad headline variants
-  - `email-sequence` — onboarding or nurture email set
-  - `positioning-statement` — core positioning sentence
+- `<deliverable>` - the asset type being briefed. Examples:
+  - `homepage-hero` - hero + subhead + 3 pillars + CTA
+  - `sales-narrative` - full sales story arc
+  - `ad-headlines` - paid ad headline variants
+  - `email-sequence` - onboarding or nurture email set
+  - `positioning-statement` - core positioning sentence
 
-- `[icp]` (optional) — which ICP to target. If omitted, uses the highest-confidence approved Persona. Examples: `icp-1`, `ops-lead`, `mid-market-saas`
+- `[icp]` (optional) - which ICP to target. If omitted, uses the highest-confidence approved Persona. Examples: `icp-1`, `ops-lead`, `mid-market-saas`
 
 ## Process
 
@@ -48,5 +48,5 @@ The compiled brief follows the structure from brief-harness.md §9. Every field 
 
 - Only use approved objects (status: "approved"). Never pull from pending or rejected.
 - If a required section has no approved objects, flag it clearly rather than inventing content.
-- Surface the ICP choice to the human before generating — confirm or allow them to change it.
+- Surface the ICP choice to the human before generating - confirm or allow them to change it.
 - After compiling, ask: "Review this brief before generating copy? (yes/no)"
