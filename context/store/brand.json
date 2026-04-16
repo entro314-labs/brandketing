@@ -1,0 +1,36 @@
+{
+  "id": "brand_main",
+  "type": "brand",
+  "tone_axes": {
+    "sophistication": "high",
+    "warmth": "medium",
+    "energy": "medium-high",
+    "humor": "low",
+    "confidence": "high but evidence-backed",
+    "sentence_length": "short to medium",
+    "jargon": "audience-native only",
+    "emotionality": "controlled"
+  },
+  "words_to_favor": [],
+  "words_to_avoid": [
+    "seamless",
+    "robust",
+    "powerful",
+    "intuitive",
+    "innovative",
+    "next-gen",
+    "best-in-class",
+    "revolutionary",
+    "game-changing",
+    "synergy",
+    "leverage",
+    "utilize",
+    "holistic"
+  ],
+  "syntax_preferences": [],
+  "approved_headlines": [],
+  "rejected_headlines": [],
+  "notes": "",
+  "freshness": "",
+  "status": "pending"
+}
