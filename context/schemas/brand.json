@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Brand",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "tone_axes",
+    "words_to_favor",
+    "words_to_avoid",
+    "syntax_preferences",
+    "approved_headlines",
+    "rejected_headlines",
+    "notes",
+    "freshness",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "const": "brand"
+    },
+    "tone_axes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sophistication",
+        "warmth",
+        "energy",
+        "humor",
+        "confidence",
+        "sentence_length",
+        "jargon",
+        "emotionality"
+      ],
+      "properties": {
+        "sophistication": {
+          "type": "string"
+        },
+        "warmth": {
+          "type": "string"
+        },
+        "energy": {
+          "type": "string"
+        },
+        "humor": {
+          "type": "string"
+        },
+        "confidence": {
+          "type": "string"
+        },
+        "sentence_length": {
+          "type": "string"
+        },
+        "jargon": {
+          "type": "string"
+        },
+        "emotionality": {
+          "type": "string"
+        }
+      }
+    },
+    "words_to_favor": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "words_to_avoid": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "syntax_preferences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "approved_headlines": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rejected_headlines": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "freshness": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "pending",
+        "needs-review",
+        "approved",
+        "rejected"
+      ]
+    }
+  }
+}

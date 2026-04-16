@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Capability",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "name",
+    "user_visible_description",
+    "who_cares",
+    "trigger_moment",
+    "friction_removed",
+    "outcome_created",
+    "second_order_outcome",
+    "table_stakes_or_differentiator",
+    "source_refs",
+    "confidence",
+    "freshness",
+    "status",
+    "pipeline"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "const": "capability"
+    },
+    "name": {
+      "type": "string"
+    },
+    "user_visible_description": {
+      "type": "string"
+    },
+    "who_cares": {
+      "type": "string"
+    },
+    "trigger_moment": {
+      "type": "string"
+    },
+    "friction_removed": {
+      "type": "string"
+    },
+    "outcome_created": {
+      "type": "string"
+    },
+    "second_order_outcome": {
+      "type": "string"
+    },
+    "table_stakes_or_differentiator": {
+      "enum": [
+        "table-stakes",
+        "parity",
+        "differentiated",
+        "ownable"
+      ]
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "freshness": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "pending",
+        "needs-review",
+        "approved",
+        "rejected"
+      ]
+    },
+    "pipeline": {
+      "const": "product-truth"
+    }
+  }
+}

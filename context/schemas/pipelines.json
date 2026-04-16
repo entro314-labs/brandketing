@@ -1,0 +1,66 @@
+{
+  "product-truth": {
+    "objectTypes": [
+      "capability"
+    ],
+    "schemaFiles": [
+      "capability.json"
+    ],
+    "storeFiles": [
+      "capabilities.json"
+    ]
+  },
+  "customer-truth": {
+    "objectTypes": [
+      "pain",
+      "quote",
+      "use_case"
+    ],
+    "schemaFiles": [
+      "pain.json",
+      "quote.json",
+      "use_case.json"
+    ],
+    "storeFiles": [
+      "pains.json",
+      "quotes.json",
+      "use_cases.json"
+    ]
+  },
+  "commercial-truth": {
+    "objectTypes": [
+      "persona"
+    ],
+    "schemaFiles": [
+      "persona.json"
+    ],
+    "storeFiles": [
+      "personas.json"
+    ]
+  },
+  "market-truth": {
+    "objectTypes": [
+      "competitor",
+      "cliche"
+    ],
+    "schemaFiles": [
+      "competitor.json",
+      "cliche.json"
+    ],
+    "storeFiles": [
+      "competitors.json",
+      "cliches.json"
+    ]
+  },
+  "proof-truth": {
+    "objectTypes": [
+      "proof"
+    ],
+    "schemaFiles": [
+      "proof.json"
+    ],
+    "storeFiles": [
+      "proofs.json"
+    ]
+  }
+}
