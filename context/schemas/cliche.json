@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cliche",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "phrase",
+    "semantic_variants",
+    "why_weak",
+    "category_saturation",
+    "source_refs",
+    "confidence",
+    "freshness",
+    "status",
+    "pipeline"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "const": "cliche"
+    },
+    "phrase": {
+      "type": "string"
+    },
+    "semantic_variants": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "why_weak": {
+      "type": "string"
+    },
+    "category_saturation": {
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "freshness": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "pending",
+        "needs-review",
+        "approved",
+        "rejected"
+      ]
+    },
+    "pipeline": {
+      "const": "market-truth"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Quote",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "verbatim",
+    "persona",
+    "stage",
+    "pain_theme",
+    "product_area",
+    "sentiment",
+    "vividness",
+    "source_refs",
+    "confidence",
+    "freshness",
+    "status",
+    "pipeline"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "const": "quote"
+    },
+    "verbatim": {
+      "type": "string"
+    },
+    "persona": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string"
+    },
+    "pain_theme": {
+      "type": "string"
+    },
+    "product_area": {
+      "type": "string"
+    },
+    "sentiment": {
+      "enum": [
+        "positive",
+        "negative",
+        "neutral",
+        "mixed"
+      ]
+    },
+    "vividness": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "freshness": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "pending",
+        "needs-review",
+        "approved",
+        "rejected"
+      ]
+    },
+    "pipeline": {
+      "const": "customer-truth"
+    }
+  }
+}

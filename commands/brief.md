@@ -38,7 +38,7 @@ Run the **compiler** agent to assemble a structured brief from approved context 
 
 ## Output Format
 
-The compiled brief follows the structure from brief-harness.md §9. Every field includes:
+The compiled brief follows the structure defined in this command and the compiler agent output format. Every field includes:
 - Assembled content
 - Confidence score (derived from constituent objects)
 - Source object IDs

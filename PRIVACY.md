@@ -1,26 +1,28 @@
 # Privacy Policy
 
-**brandketing** is a Claude Code plugin. It operates entirely locally on your machine.
+**brandketing** is a local-first plugin. The plugin itself does not run a hosted service or make network requests on its own.
 
-## Data collection
+## What the plugin reads
 
-This plugin does not collect, transmit, or store any data outside of your local machine.
+- Files you explicitly provide via `/brandketing:ingest`
+- Structured objects in `.brandketing/context/store/` inside the target project
 
-## What the plugin accesses
+## What the plugin writes
 
-- Files you explicitly provide via `/brandketing:ingest` (read-only)
-- A local context store it creates and maintains in `.brandketing/context/store/` within your project directory
+- Structured context objects in `.brandketing/context/store/`
+- Generated briefs in `.brandketing/briefs/`
+- Generated copy in `.brandketing/copy/`
 
 ## What the plugin does not do
 
-- Send any data to external servers
-- Make network requests
-- Store data outside your project directory
-- Share data with third parties
+- Operate a remote backend
+- Collect analytics
+- Share plugin-managed data with third parties
+- Sync workspace data outside the local project on its own
 
-## Third-party services
+## Host runtime
 
-This plugin has no dependencies on external services. It uses Claude Code's built-in AI capabilities, which are subject to [Anthropic's privacy policy](https://www.anthropic.com/privacy).
+The plugin runs inside a host agent product such as Codex or Claude Code. Any model execution or product-level data handling is governed by the host product you use, not by this plugin.
 
 ## Contact
 

@@ -1,0 +1,46 @@
+{
+  "name": "brandketing",
+  "version": "1.0.0",
+  "description": "Build marketing briefs and copy from a local context store.",
+  "author": {
+    "name": "entro314 labs",
+    "url": "https://github.com/entro314-labs"
+  },
+  "homepage": "https://github.com/entro314-labs/brandketing",
+  "repository": "https://github.com/entro314-labs/brandketing",
+  "license": "MIT",
+  "keywords": [
+    "marketing",
+    "copywriting",
+    "briefs",
+    "positioning",
+    "product-marketing",
+    "context-store",
+    "icp"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Brandketing",
+    "shortDescription": "Turn raw product and customer inputs into briefs and copy from a local context store",
+    "longDescription": "Brandketing ingests product, customer, market, and proof inputs into structured local objects, lets a human review them, then compiles approved data into marketing briefs and copy with a strategist and critic pass. Runtime data stays under `.brandketing/` inside the target project and the plugin does not require external services.",
+    "developerName": "entro314 labs",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/entro314-labs/brandketing",
+    "privacyPolicyURL": "https://github.com/entro314-labs/brandketing/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/entro314-labs/brandketing/blob/main/TERMS.md",
+    "defaultPrompt": [
+      "Ingest these customer notes into the brandketing store",
+      "Compile a homepage brief from approved brandketing data",
+      "Generate landing page copy for this ICP and critique it"
+    ],
+    "brandColor": "#F97316",
+    "composerIcon": "./assets/brandketing-icon.svg",
+    "logo": "./assets/brandketing-icon.svg",
+    "screenshots": []
+  }
+}

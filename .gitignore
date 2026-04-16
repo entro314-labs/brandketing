@@ -1,5 +1,5 @@
-# Context store is project-specific — not part of the plugin
-# context/store/
+# Runtime data is project-specific — not part of the plugin
+.brandketing/
 
 # Local project settings
 .claude/settings.local.json

@@ -68,7 +68,7 @@ Only elevate proof that is: measurable OR mechanistic, fresh, attributable to th
 
 ## Object Schemas
 
-Load the full schema for each object type from `${CLAUDE_PLUGIN_ROOT}/context/schemas/`. Each schema defines required and optional fields.
+Load the full schema for each object type from the plugin's `context/schemas/` directory. Use `context/schemas/pipelines.json` to determine which schema files apply to the selected pipeline. Each schema defines required and optional fields.
 
 Key rules for all objects:
 - `source_refs` must be populated — no extraction without citation

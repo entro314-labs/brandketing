@@ -1,25 +1,28 @@
 # brandketing
 
-A Claude Code plugin that turns raw product and customer data into a living marketing intelligence context store — and compiles it into briefs and copy on demand.
+A Codex-compatible marketing intelligence plugin that turns raw product and customer data into a local context store, then compiles that data into briefs and copy on demand.
+
+## Compatibility
+
+- Codex: `.codex-plugin/plugin.json`
+- Claude Code: `.claude-plugin/plugin.json`
 
 ## What it does
 
 Instead of filling out a brief from scratch every time, this plugin maintains a **context store** that accumulates structured marketing objects over time. Each asset you generate pulls from approved, sourced, scored objects — not from memory or imagination.
 
-The two source documents behind this system:
-- `brief-harness.md` — automated brief compilation from 5 data pipelines
-- `marketing-harness.md` — 6-step strategy workflow + critic pass for copy generation
+The repo is split across:
+- `commands/` for the operator workflows
+- `agents/` for normalization, compilation, strategy, and critique
+- `skills/` for the reusable guidance those agents rely on
+- `context/schemas/` for the object definitions used during ingestion
+- `context/store/` for starter files aligned with the runtime store format
 
-## Install
+## Installation
 
-```
-/plugin install brandketing@claude-plugins-official
-```
+For Codex, this repo already contains the required marketplace-facing manifest at `.codex-plugin/plugin.json`.
 
-Or from GitHub:
-```
-/plugin install brandketing@github:entro314-labs/brandketing
-```
+For local testing, use this repository as the plugin root in a Codex setup that supports local plugins. The existing `.claude-plugin/plugin.json` is kept for Claude Code compatibility.
 
 ## Commands
 
@@ -50,7 +53,11 @@ Or from GitHub:
 
 ## Context store
 
-Each project gets its own store at `.brandketing/context/store/` (not committed to git).
+Each target project gets its own runtime store under `.brandketing/` (not committed to git):
+
+- `.brandketing/context/store/`
+- `.brandketing/briefs/`
+- `.brandketing/copy/`
 
 Objects: `capabilities`, `pains`, `quotes`, `use_cases`, `personas`, `competitors`, `cliches`, `proofs`, `brand`
 
@@ -64,8 +71,6 @@ Each object carries: confidence score, source references, freshness date, and ap
 3. /brandketing:review
 4. /brandketing:generate homepage-hero icp-1
 ```
-
-For a lightweight version without the context store, see **brandketing-quick**.
 
 ## Design principles
 

@@ -19,11 +19,12 @@ Run the **normalizer** agent on a raw source file and write the resulting struct
 ## Process
 
 1. Read the source file at `<source-path>`.
-2. Load the schema for the target pipeline from `${CLAUDE_PLUGIN_ROOT}/context/schemas/`.
-3. Invoke the **normalizer** agent with the source content, pipeline type, and schema.
-4. The normalizer will extract structured objects with confidence scores and source references.
-5. Append new objects to the relevant store file in `context/store/` within the project directory. If a store file doesn't exist, create it with an empty array first.
-6. Report: how many objects were created, average confidence, any items flagged as low-evidence (confidence < 0.5).
+2. Load `context/schemas/pipelines.json` from this plugin to map the selected pipeline to its schema files and store files.
+3. Load the relevant schema files from the plugin's `context/schemas/` directory.
+4. Invoke the **normalizer** agent with the source content, pipeline type, and schema.
+5. The normalizer will extract structured objects with confidence scores and source references.
+6. Append new objects to the relevant store file in `.brandketing/context/store/` within the project directory. If a store file doesn't exist, initialize it from the matching starter file in this plugin's `context/store/` directory.
+7. Report: how many objects were created, average confidence, any items flagged as low-evidence (confidence < 0.5).
 
 ## Context Store Location
 
